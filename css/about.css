@@ -1,0 +1,246 @@
+/* 公共样式 */
+section {
+    padding: 60px 0;
+}
+
+section h2 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* 公司简介样式 */
+.intro-content {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.intro-text {
+    flex: 1;
+    line-height: 1.8;
+}
+
+.intro-text p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.intro-image {
+    flex: 1;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.intro-image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.intro-image img:hover {
+    transform: scale(1.05);
+}
+
+/* 新闻部分样式 */
+.news-section {
+    padding: 60px 0;
+    background: #f8f8f8;
+}
+
+.news-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.news-item {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.news-item-left {
+    flex: 1;
+}
+
+.news-title {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.news-title:hover {
+    color: var(--primary-color);
+}
+
+.news-date {
+    color: #999;
+    font-size: 14px;
+}
+
+.read-more {
+    display: inline-block;
+    color: var(--primary-color);
+    text-decoration: none;
+    padding: 5px 15px;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.read-more:hover {
+    background: var(--primary-color);
+    color: #fff;
+    text-decoration: none;
+}
+
+/* 移除旧的内容样式 */
+.news-content,
+.news-excerpt {
+    display: none;
+}
+
+/* 分页样式 */
+.news-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.news-pagination button {
+    padding: 8px 15px;
+    border: none;
+    background: var(--primary-color);
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.news-pagination button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.page-numbers {
+    display: flex;
+    gap: 5px;
+}
+
+.page-numbers button {
+    min-width: 40px;
+    height: 40px;
+    padding: 0;
+    background: #f0f0f0;
+    color: #333;
+}
+
+.page-numbers button.active {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.page-numbers button:hover:not(.active):not(:disabled) {
+    background: #e0e0e0;
+}
+
+.page-info {
+    color: #666;
+}
+
+/* 联系方式样式 */
+.contact-section {
+    background: #f8f8f8;
+    padding: 60px 0;
+}
+
+.contact-info {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-info li {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #666;
+    font-size: 16px;
+}
+
+.contact-info i {
+    font-size: 24px;
+    color: var(--primary-color);
+}
+
+/* 地图容器样式 */
+.map-container {
+    width: 100%;
+    margin-top: 30px;
+}
+
+#map {
+    width: 100%;
+    height: 400px; /* 设置固定高度 */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+#map img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 确保图片覆盖整个容器 */
+    display: block;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .intro-content {
+        flex-direction: column;
+    }
+    
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contact-info li {
+        width: 100%;
+        justify-content: center;
+        padding: 15px;
+    }
+    
+    .map-container {
+        height: 300px;
+    }
+
+    #map {
+        height: 300px; /* 移动端稍微降低高度 */
+    }
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智能X射线防护盾 - 专业的辐射防护解决方案</title>
+    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/nav.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav>
+        <div class="container">
+            <div class="logo">X射线防护盾™</div>
+            <ul>
+                <li><a href="#home">首页</a></li>
+                <li><a href="features.html">产品特点</a></li>
+                <li><a href="tech.html">技术支持</a></li>
+                <li><a href="about.html">关于我们</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">下载 <span class="arrow">▼</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="downloads/docs/说明书.pdf" download>说明书</a></li>
+                        <li><a href="downloads/software/setup.exe" download>软件下载</a></li>
+                        <li><a href="downloads/video/软件操作教程.mp4" download>软件教程</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 首页banner -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="text-content active">
+                    <h1>新一代智能X射线防护盾</h1>
+                    <p>多轨道移动式 · 精准控制 · 实时防护</p>
+                </div>
+                <div class="text-content">
+                    <h1>微米级精准控制</h1>
+                    <p>5组步进电机 · 多维移动 · 智能定位</p>
+                </div>
+                <div class="text-content">
+                    <h1>实时图像处理</h1>
+                    <p>工业级相机 · 智能算法 · 即时反馈</p>
+                </div>
+            </div>
+            <div class="slider">
+                <div class="slide-track">
+                    <div class="slide active">
+                        <img src="images/index/banner1.jpg" alt="智能防护系统">
+                    </div>
+                    <div class="slide">
+                        <img src="images/index/banner2.jpg" alt="精准控制系统">
+                    </div>
+                    <div class="slide">
+                        <img src="images/index/banner3.jpg" alt="图像处理系统">
+                    </div>
+                </div>
+                <div class="slider-nav">
+                    <button class="slider-btn active"></button>
+                    <button class="slider-btn"></button>
+                    <button class="slider-btn"></button>
+                </div>
+            </div>
+            <a href="features.html" class="cta-button">了解更多</a>
+        </div>
+    </section>
+
+    <!-- 产品特点 -->
+    <section class="features">
+        <div class="container">
+            <h2>核心优势</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>多轨道移动系统</h3>
+                    <p>采用5台两相步进电机协同工作，实现灵活精准的多维度移动控制</p>
+                </div>
+                <div class="feature-card">
+                    <h3>智能图像处理</h3>
+                    <p>工业级摄像机实时采集，先进算法确保精确防护定位</p>
+                </div>
+                <div class="feature-card">
+                    <h3>精准控制系统</h3>
+                    <p>专业解码板配合42步进电机，实现微米级精确定位</p>
+                </div>
+                <div class="feature-card">
+                    <h3>稳定电源供应</h3>
+                    <p>配备220V转110V高精度电源适配器，确保系统稳定运行</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 技术支持 -->
+    <section class="tech">
+        <div class="container">
+            <h2>技术规格</h2>
+            <div class="tech-specs">
+                <div class="spec-item">
+                    <h3>硬件配置</h3>
+                    <ul>
+                        <li>5组两相步进电机系统</li>
+                        <li>工业级DH-HV1351UM摄像机</li>
+                        <li>专业电机驱动控制板</li>
+                        <li>高精度电源适配器(220V→110V)</li>
+                    </ul>
+                </div>
+                <div class="spec-item">
+                    <h3>软件功能</h3>
+                    <ul>
+                        <li>多线程并行处理架构</li>
+                        <li>实时图像通道转换</li>
+                        <li>智能控制算法</li>
+                        <li>图像存储与回溯</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系方式 -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>联系我们</h2>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <input type="text" placeholder="您的姓名" required>
+                    <input type="tel" placeholder="联系电话" required length="11" pattern="\d{11}">
+                    <input type="email" placeholder="电子邮箱" required>
+                    <textarea placeholder="请输入您的需求..." required></textarea>
+                    <p class="privacy-notice">我们承诺对您的个人信息进行严格保密，仅用于产品咨询和服务目的。</p>
+                    <button type="submit" class="submit-btn">提交咨询</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- 成功提示弹窗 -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>提交成功</h3>
+            <p>感谢您的咨询，我们将尽快与您联系！</p>
+        </div>
+    </div>
+
+    <footer id="footer">
+    </footer>
+    <script src="js/components.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/nav.js"></script>
+</body>
+</html>

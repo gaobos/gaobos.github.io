@@ -1,0 +1,93 @@
+#footer {
+    background: var(--primary-color);
+    padding: 15px 0;
+    width: 100%;
+}
+
+.footer-content {
+    text-align: center;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.partners {
+    margin-bottom: 0;
+}
+
+.partners h4 {
+    margin-bottom: 12px;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.partners-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.main-partners {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 12px;
+}
+
+.main-partner {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.other-partners {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.other-partners a {
+    font-size: 12px;
+    color: #cccccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.copyright-row {
+    margin-top: 20px; /* 与上方合作伙伴的间距 */
+    padding-top: 15px; /* 内边距 */
+    border-top: 1px solid rgba(255, 255, 255, 0.1); /* 添加分隔线 */
+    color: #ffffff;
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+.main-partner:hover,
+.other-partners a:hover {
+    opacity: 0.8;
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .main-partners,
+    .other-partners {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+    
+    .main-partner {
+        font-size: 14px;
+    }
+    
+    .other-partners a {
+        font-size: 11px;
+    }
+    
+    .copyright-row {
+        font-size: 11px;
+    }
+}

@@ -1,0 +1,255 @@
+.feature-hero {
+    background: linear-gradient(rgba(26, 54, 88, 0.9), rgba(26, 54, 88, 0.8));
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    margin-top: 0px;
+}
+
+.feature-hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+.feature-hero p {
+    font-size: 24px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.feature-section {
+    padding: 80px 0;
+}
+
+.feature-section.bg-light {
+    background: var(--background-color);
+}
+
+/* 硬件优势图片样式 */
+.feature-image {
+    width: 100%;
+    height: 240px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.feature-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill; /* 改为fill允许图片变形以填充容器 */
+    display: block;
+    transition: all 0.3s ease;
+}
+
+/* 软件特点图片样式 */
+.feature-card-image {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.feature-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+/* 安全保障图片样式 */
+.safety-image {
+    width: 100%;
+    height: 220px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.safety-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+/* 硬件优势部分样式 */
+.feature-item h3 {
+    text-align: left;
+    margin: 15px 0;
+    color: #000000;
+    transition: all 0.3s ease;
+}
+
+.feature-item p {
+    text-align: left;
+    color: #000000;
+    line-height: 1.6;
+    transition: all 0.3s ease;
+}
+
+/* 软件特点部分样式 */
+.feature-card h3 {
+    text-align: left;
+    margin: 15px 0;
+    color: #000000;
+    transition: all 0.3s ease;
+}
+
+.feature-card p {
+    text-align: left;
+    color: #000000;
+    line-height: 1.6;
+    transition: all 0.3s ease;
+}
+
+/* 安全保障部分样式 */
+.safety-item h3 {
+    text-align: left;
+    margin: 15px 0;
+    color: #000000;
+    transition: all 0.3s ease;
+}
+
+.safety-item p {
+    text-align: left;
+    color: #000000;
+    line-height: 1.6;
+    transition: all 0.3s ease;
+}
+
+.feature-item h3,
+.feature-card h3,
+.safety-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+/* 共享的交互动画效果 */
+.feature-item,
+.feature-card,
+.safety-item {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+/* 统一的悬停效果 */
+.feature-item:hover,
+.feature-card:hover,
+.safety-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* 悬停时文字效果 */
+.feature-item:hover h3,
+.feature-card:hover h3,
+.safety-item:hover h3 {
+    color: var(--primary-color);
+}
+
+.feature-item:hover p,
+.feature-card:hover p,
+.safety-item:hover p {
+    color: #333;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .feature-image {
+        height: 200px;
+    }
+    
+    .feature-card-image {
+        height: 180px;
+    }
+    
+    .safety-image {
+        height: 190px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.feature-item {
+    text-align: center;
+    padding: 30px;
+    background: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+}
+
+.feature-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.feature-card {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    border-left: 4px solid var(--secondary-color);
+}
+
+.safety-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.safety-item {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    border-top: 4px solid var(--accent-color);
+}
