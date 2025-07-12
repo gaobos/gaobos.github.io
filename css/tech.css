@@ -277,7 +277,7 @@ video::-webkit-media-controls {
     }
 
     .img-box {
-        padding-bottom: 75%; /* 移动端调整为 4:3 比例 */
+        padding-bottom: 75%; /* 移动端比例调整为 4:3  */
     }
 
     .video-container {
